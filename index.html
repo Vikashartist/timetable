@@ -125,7 +125,7 @@
   .timer-container{
     width:auto;
     height:auto;
-    border:1px solid red;rgba(72, 186, 63, 1)
+    border:1px solid rgba(72, 186, 63, 1);
   }
   .departmet-text{
     padding:10px;
@@ -231,10 +231,10 @@
  } */
 </style>
 <body>
-  <div class="landscape-message">
+  <!-- <div class="landscape-message">
     <div class="land-in">
       Open In landscape mode
-    </div>
+    </div> -->
   </div>
       <div class="container">
         <div class="dept-title">DEPARTMENT OF COMPUTER SCIENCE </div>
@@ -287,21 +287,21 @@
        </div>
      </footer>
     <script>
-      function checkOrientation() {
-        const container = document.querySelector('.container');
-        const landscapeMessage = document.querySelector('.landscape-message');
-        if (window.innerHeight > window.innerWidth) {
-          container.style.display = 'none';
-          landscapeMessage.style.display = 'block';
-        } else {
-          container.style.display = '';
-          landscapeMessage.style.display = 'none';
-        }
-      }
+    //   function checkOrientation() {
+    //     const container = document.querySelector('.container');
+    //     const landscapeMessage = document.querySelector('.landscape-message');
+    //     if (window.innerHeight > window.innerWidth) {
+    //       container.style.display = 'none';
+    //       landscapeMessage.style.display = 'block';
+    //     } else {
+    //       container.style.display = '';
+    //       landscapeMessage.style.display = 'none';
+    //     }
+    //   }
     
-      window.addEventListener('resize', checkOrientation);
-      window.addEventListener('load', checkOrientation);
-        const timetables = {
+    //   window.addEventListener('resize', checkOrientation);
+    //   window.addEventListener('load', checkOrientation);
+    //     const timetables = {
             3: {
                 "09:00 AM - 09:45 AM": [" ", "Maths", "Biology", "Computer", "Maths", "Biology"],
                 "09:45 AM - 10:30 AM": [" ", "Biology", "Computer", "Physics", "Biology", "Computer"],
